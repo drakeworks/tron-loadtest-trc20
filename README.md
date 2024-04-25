@@ -21,5 +21,10 @@ To run this project, you'll need:
 
 Install the necessary Python packages with:
 
-```bash
-pip install tronpy
+`pip install tronpy`
+
+## Notes
+
+- This project is designed for the Tron test network. Using mainnet keys or sending transactions to production addresses can result in loss of funds.
+- Be sure to use appropriate safety measures when handling private keys. Keep them secure and do not share them publicly.
+- The random transaction sending function runs in a separate thread and can continue sending transactions until stopped manually.

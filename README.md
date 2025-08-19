@@ -1,12 +1,13 @@
 # Tron Loadtest USDT-TRC20
-Script to automate USDT TRC-20 transactions on Tron testnet.
+Script to automate TRC20 token transactions on Tron testnet for system load testing purposes.
 
 The key components of the project are:
 
-- **Tron Network**: We use the Tron test network, known as "Nile," to send transactions.
-- **Private Keys**: Transactions are sent from randomly selected private keys.
-- **Recipient Addresses**: Transactions are sent to a list of predetermined recipient addresses.
-- **Transaction Variability**: The amount and interval between transactions are random to simulate real transactions.
+- **Tron Network**: Uses the Tron test network (Nile) to send transactions safely
+- **TRC20 Tokens**: Supports most TRC-20 tokens (including USDT), with configurable contract addresses
+- **Private Keys**: Transactions are sent from randomly selected private keys
+- **Recipient Addresses**: Transactions are sent to a list of predetermined recipient addresses
+- **Transaction Variability**: Random amounts and intervals between transactions simulate real network activity
 
 ## Requirements
 
@@ -22,6 +23,23 @@ To run this project, you'll need:
 Install the necessary Python packages with:
 
 `pip install tronpy`
+
+## Configuration
+
+Before running, update the configuration in `main.py`:
+
+- Set your TRC20 token contract address
+- Configure token decimals and symbol
+- Add your private keys and recipient addresses
+- Adjust transaction amounts and intervals as needed
+
+## Usage
+
+Run the script with:
+
+`python main.py`
+
+The script will continuously send random transactions until stopped with Ctrl+C.
 
 ## Notes
 

@@ -1,5 +1,5 @@
-# Tron Loadtest USDT-TRC20
-Script to automate TRC20 token transactions on Tron testnet for system load testing purposes.
+# Tron Loadtest TRC-20
+Script to automate TRC-20 token transactions on Tron testnet for system load testing purposes.
 
 The key components of the project are:
 
@@ -28,7 +28,7 @@ Install the necessary Python packages with:
 
 Before running, update the configuration in `main.py`:
 
-- Set your TRC20 token contract address
+- Set your TRC-20 token contract address
 - Configure token decimals and symbol
 - Add your private keys and recipient addresses
 - Adjust transaction amounts and intervals as needed
